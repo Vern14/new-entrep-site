@@ -20,8 +20,8 @@ document.getElementById("x").style.display="none";
 }
 
 window.onresize=function(){
-	if(window.innerWidth>1200)
- 
+	if(window.innerWidth>1400)
+ location.reload();
 }
 
 }
