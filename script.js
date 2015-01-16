@@ -1,11 +1,13 @@
 
+onload=function(){
+
 document.getElementById("menu").onclick=function (){
 var x = document.getElementsByClassName("gridmenu");
     x[0].style.display="block";
 document.getElementById("menu").style.display="none";
 
 	document.getElementById("x").style.display="block";
-	
+	 
 
 }
 document.getElementById("x").onclick=function (){
@@ -22,7 +24,4 @@ window.onresize=function(){
  location.reload();
 }
 
-
-onload = function() {
- location.reload();
 }
