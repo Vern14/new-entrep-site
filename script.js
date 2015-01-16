@@ -16,7 +16,7 @@ var x = document.getElementsByClassName("gridmenu");
 document.getElementById("menu").style.display="block";
 
 
-location.reload();
+ocation.reload();
 }
 
 
@@ -25,9 +25,7 @@ window.onresize=function(){
 	if(window.innerWidth>1000)
 
   	document.getElementById("x").style.display="none";
-	
-var x = document.getElementsByClassName("gridmenu");
-    x[2].style.display="none";
+	document.getElementById("menu").reload();
 
 
 }
