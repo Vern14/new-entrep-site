@@ -30,11 +30,12 @@ document.getElementById("x").style.display="none";
 
 else
 var x = document.getElementsByClassName("gridmenu");
-    x[0].style.display="none";
+    x[0].style.display="block";
 document.getElementById("menu").style.display="block";
 
 document.getElementById("x").style.display="none";
+document.getElementById("menu").reload();
 
 }
- document.getElementById("menu").reload();
+ 
 }
