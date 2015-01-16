@@ -86,10 +86,16 @@ body {
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 500px) {
+#x,#menu{display:none;}
+span{border: 1px solid silver; padding:15px; font:18px; font-weight:bold; position: relative; width:40px; text-align:center;}
+@media only screen and (max-width: 800px) {
+  #menu{display:block;}
+
     .gridmenu {
         width: 100%;
+		display:none;
     }
+
 
     .menuitem {
         margin: 1.0121457489878542510121457489879%;
@@ -128,6 +134,8 @@ a{text-decoration:none; color: black; }
             <div class="header">
                 <h2 align ="center">The College of Wooster</h2>
             </div>
+			<br>
+			<span id="menu">Menu</span> <span id="x">Close</span>
         </div>
         <div class="gridbox gridmenu">
             <div class="menuitem"><a href="index.html">Home</a></div>
@@ -157,6 +165,7 @@ The Center for Entrepreneurship gathers useful information on entrepreneurship a
        
    
 </div>
+<script src="script.js"></script>
 </body>
 </html>
 
