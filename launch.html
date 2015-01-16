@@ -86,7 +86,10 @@ body {
     margin-bottom: 0;
 }
 
+#menu,#x{display:none;}
 @media only screen and (max-width: 800px) {
+  #menu{display:block;}
+
     .gridmenu {
         width: 100%;
 		display:none;
@@ -140,6 +143,8 @@ background: #F8F8F8;
 
 #launchlist>li{list-style-type:square; margin-left:20px;}
 #launchsitelink{text-decoration:underline;}
+span{border: 1px solid silver; padding:15px; font:18px; font-weight:bold; position: relative; width:40px; text-align:center;}
+
 </style>
 </head>
 <body>
@@ -149,7 +154,10 @@ background: #F8F8F8;
             <div class="header">
                 <h2 align ="center">The College of Wooster</h2>
             </div>
+			<br>
+			<span id="menu">Menu</span> <span id="x">Close</span>
         </div>
+		<div id="nav">
         <div class="gridbox gridmenu">
            <div class="menuitem"><a href="index.html">Home</a></div>
             <div class="menuitem"><a href="about.html">About</a></div>
@@ -162,6 +170,7 @@ background: #F8F8F8;
 			<div class="menuitem"><a href="tedx.html">TEDx Wooster</a></div>
 			
         </div>
+		 </div>
         <div class="gridbox gridmain">
             <div class="main">
 <h1>Launch Club</h1>
@@ -237,6 +246,27 @@ Collaborate with students on the creation of new businesses
        
    
 </div>
+
+<script>
+
+
+
+
+
+document.getElementById("menu").onclick=function (){
+var x = document.getElementsByClassName("gridmenu");
+    x[0].style.display="block";
+document.getElementById("menu").style.display="none";
+
+	document.getElementById("x").style.display="block";
+}
+document.getElementById("x").onclick=function (){
+var x = document.getElementsByClassName("gridmenu");
+    x[0].style.display="none";
+document.getElementById("menu").style.display="block";
+document.getElementById("x").style.display="none";
+}
+</script>
 </body>
 </html>
 
