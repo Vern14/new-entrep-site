@@ -22,7 +22,7 @@ document.getElementById("x").style.display="none";
 window.onresize=function(){
 	if(window.innerWidth>1000)
   
-	location.reload();
+	document.getElementsByClassName("gridmenu").reload();
 
 
 
