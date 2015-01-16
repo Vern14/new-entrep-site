@@ -7,7 +7,7 @@ var x = document.getElementsByClassName("gridmenu");
 document.getElementById("menu").style.display="none";
 
 	document.getElementById("x").style.display="block";
-	 
+	  
 
 }
 document.getElementById("x").onclick=function (){
@@ -21,7 +21,7 @@ document.getElementById("x").style.display="none";
 
 window.onresize=function(){
 	if(window.innerWidth>1000)
- location.reload();
+    document.getElementById("menu").reload();
 }
 
 }
