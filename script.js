@@ -20,7 +20,7 @@ document.getElementById("x").style.display="none";
 }
 
 window.onresize=function(){
-	if(window.innerWidth>1)
+	if(window.innerWidth>1200)
  location.reload();
 }
 
