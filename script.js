@@ -21,7 +21,7 @@ document.getElementById("x").style.display="none";
 
 window.onresize=function(){
 	if(window.innerWidth>800)
- location.reload();
+
 }
 
 }
