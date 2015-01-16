@@ -23,3 +23,6 @@ window.onresize=function(){
 }
 
 
+onload = function() {
+ location.reload();
+}
