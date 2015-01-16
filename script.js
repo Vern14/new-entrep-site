@@ -22,9 +22,10 @@ document.getElementById("menu").reload();
 }
 
 window.onresize=function(){
-	if(window.innerWidth>100)
+	if(window.innerWidth>1000)
     document.getElementById("menu").reload();
 	document.getElementById("x").reload();
+	document.getElementById("nav").reload();
 }
 
 }
